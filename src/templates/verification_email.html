@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Verification Email</title>
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif; font-size: 16px;">
+    <h2>Verify email address</h2>
+    <br />
+    <h3>Hi, {{username}}</h3>
+    <br />
+    <p>Please verify your email address to activate your App account</p>
+    <br />
+    <br />
+    <a style="text-decoration: none; border: 1px solid #fa0000; background-color: #fa0000; color: #fff; font-size: 18px; font-weight: 600; padding: 6px 12px; border-radius: 4px;"
+        href="{{host}}api/auth/verify_email/{{token}}">
+        Verify email address
+    </a>
+    <br />
+    <br />
+    <p>If you do not wish to create a new account, simply ignore this email.</p>
+    <br />
+    <p>Kind regards</p>
+    <p>The App Team</p>
+</body>
+
+</html>
